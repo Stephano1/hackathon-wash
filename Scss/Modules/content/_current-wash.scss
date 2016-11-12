@@ -102,7 +102,7 @@
     text-align: center;
     overflow: hidden;
     padding: 10px 0;
-   color: #fff;
+    color: #fff;
     font-size: 20px;
     border-top: 1px solid #fff;
   }
@@ -129,4 +129,47 @@
     cursor: pointer;
     width: 100%;
   }
+}
+
+.popup-add-wash{
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: #FFA80B;
+  &.popup-add-wash-visible{
+    display: block;
+  }
+}
+
+.add-wash-wrap{
+ padding: 15px 40px;
+ overflow: hidden;
+ display: block;
+ h2{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: block;
+  font-size: 24px;
+}
+input{
+  width: 100%;
+  display: block;
+  height: 30px;
+  margin-bottom: 10px;
+  border: none;
+}
+.col-wash-1,.col-wash-2{
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+.col-wash-2{
+  margin-right: 0;
+}
 }

@@ -20,7 +20,7 @@
         <!-- add your styles here -->
       </head>
       <body>
-
+        <div class="add-new-wash"><a id="popup-btn" href="#"><img src="images/add-wash.png" alt=""></a></div>
         <div class="mobile-nav mobile-only">
           <a href="#" class="mobile-logo"><img src="" alt=""></a>
           <a href="#">
@@ -299,6 +299,32 @@
             </footer>
           </div>
         </div>
+        <section class="popup-add-wash" id="popup-washer">
+          <div class="container">
+            <div class="add-wash-wrap">
+              <img src="" alt="">
+              <h2>Створити нову мийку</h2>
+              <form action="">
+                <div class="col-wash-1">
+                  <div class="field"><input type="text" placeholder="Назва"></div>
+                  <div class="field"><input type="text" placeholder="Адреса"></div>
+                  <div class="field"><input type="text" placeholder="Контактна інформація"></div>
+                </div>
+                <div class="col-wash-2">
+                  <div class="field">
+                    <input type="time" id="datetime">
+                  </div>
+                  <div class="field">
+                    <input type="number" placeholder="Приблизна вартість">
+                  </div>
+                  <div class="field">
+                    <input type="file" name="pic" accept="image/*">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
         <!-- main-wrapper end-->
         <!-- add your scripts here -->
         <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxvl2EpYDdofoGk4BzRK2a-hE8T6t9E_c&callback=initMap"></script>
@@ -346,9 +372,9 @@
           container: document.getElementById('container'),
         });
         </script>
-    <!-- add your scripts here -->
-  </body>
-  </html>
+        <!-- add your scripts here -->
+      </body>
+      </html>
 
 
 
