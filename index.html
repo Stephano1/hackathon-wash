@@ -239,7 +239,9 @@
                     </div>
                     <div class="car-wash-calendar">
                       <div id="divid"></div>
-                      
+                      <label for="datepicker">Date:</label>
+                      <br>
+                      <input type="text" id="datepicker">
                     </div>
                   </div>
                 </div>
@@ -321,6 +323,20 @@
             marker.setAnimation(google.maps.Animation.BOUNCE);
           }
         }
+        </script>
+
+        <script src="js/pikaday.js"></script>
+        <script>
+        var picker = new Pikaday(
+        {
+          field: document.getElementById('datepicker'),
+          firstDay: 1,
+          minDate: new Date(),
+          maxDate: new Date(2020, 12, 31),
+          yearRange: [2000,2020],
+          bound: false,
+          container: document.getElementById('container'),
+        });
         </script>
 
         <!-- add your scripts here -->
