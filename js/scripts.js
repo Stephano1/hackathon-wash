@@ -15,3 +15,6 @@ var e = formatDate(d);
 var selector = document.getElementById('divid');
 var div = selector.appendChild(document.createElement('h2'));
 div.innerHTML = e;
+
+
+
