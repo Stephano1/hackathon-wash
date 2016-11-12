@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#27AAE1;}
+	.st1{fill:#FFFFFF;stroke:#27AAE1;stroke-width:0.8115;stroke-miterlimit:10;}
+	.st2{font-family:'AA-BebasNeue';}
+	.st3{font-size:103.9045px;}
+	.st4{fill:none;}
+</style>
+<g>
+	<path class="st0" d="M200,35.8c0,0-125.6,133.5-125.6,202.8S130.7,364.2,200,364.2c69.3,0,125.6-56.2,125.6-125.6
+		S200,35.8,200,35.8z M200,320.7c-45.3,0-82.1-36.7-82.1-82.1c0-45.3,36.7-82.1,82.1-82.1c45.3,0,82.1,36.7,82.1,82.1
+		C282.1,283.9,245.3,320.7,200,320.7z"/>
+	<path class="st1" d="M323.7,298.6H76.3c-33,0-60-27-60-60v0c0-33,27-60,60-60h247.4c33,0,60,27,60,60v0
+		C383.7,271.6,356.7,298.6,323.7,298.6z"/>
+	<text transform="matrix(0.9793 0 -7.895920e-002 0.9969 44.1142 275.2962)" class="st2 st3">CAR WASH</text>
+	<path id="SVGID_x5F_1_x5F_" class="st4" d="M304.3,240.5c-0.2,57.6-47.1,104.1-104.7,103.9C142,344.2,95.5,297.3,95.7,239.7
+		c0.2-57.6,47.1-104.1,104.7-103.9C258,136.1,304.5,183,304.3,240.5z"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_1_x5F_" startOffset="33.3333%">
+<tspan  style="fill:#FFFFFF; font-family:'Bender'; font-size:26.8135px; letter-spacing:40;">FULL SERVICE</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_2_x5F_" class="st4" d="M95.7,238.2c0.2-57.6,47.1-104.1,104.7-103.9c57.6,0.2,104.1,47.1,103.9,104.7
+		c-0.2,57.6-47.1,104.1-104.7,103.9C142,342.7,95.5,295.8,95.7,238.2z"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_2_x5F_" startOffset="33.3333%">
+<tspan  style="fill:#FFFFFF; font-family:'Bender'; font-size:26.8135px; letter-spacing:40;">HIGH QUALITY</tspan>	</textPath>
+</text>
+</g>
+</svg>
