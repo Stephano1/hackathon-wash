@@ -1,9 +1,9 @@
   .single-photo{
-      float: left;
-      margin: 0 1% 1% 0;
-      display: block;
-      overflow: hidden;
-      width: 100%;
+    float: left;
+    margin: 0 1% 1% 0;
+    display: block;
+    overflow: hidden;
+    width: 100%;
 
     @media (max-width: 767px){
       width: 49%;
@@ -19,6 +19,11 @@
       transition: all 0.5s ease 0s;
       max-width: 100%;
       width: 100%;
+      height: 172px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
     }
     span{
       position: relative;
@@ -33,5 +38,12 @@
       padding: 6px 0px;
       width: calc(100% + 4px);
       left: -2px;
+    }
+    &:hover{
+      img{
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        transition: all 0.2s ease-in-out;
+      }
     }
   }
