@@ -101,6 +101,9 @@
               </section>
               <section class="car-washes">
                 <div class="container">
+                  <h2 class="standart-header">
+                    Наші мийки
+                  </h2>
                   <ul>
                     <li>
                       <a href="#">
@@ -112,35 +115,100 @@
                       </a>
                     </li>
                     <li><a href="#">
-                        <img src="images/Wash_station/img2.svg" alt="">
-                        <h3>some text</h3>
-                        <span class="washes-deskription">
-                          some text here some text here some text here
-                        </span>
-                      </a></li>
+                      <img src="images/Wash_station/img2.svg" alt="">
+                      <h3>some text</h3>
+                      <span class="washes-deskription">
+                        some text here some text here some text here
+                      </span>
+                    </a></li>
                     <li><a href="#">
-                        <img src="images/Wash_station/img3.svg" alt="">
-                        <h3>some text</h3>
-                        <span class="washes-deskription">
-                          some text here some text here some text here
-                        </span>
-                      </a></li>
+                      <img src="images/Wash_station/img3.svg" alt="">
+                      <h3>some text</h3>
+                      <span class="washes-deskription">
+                        some text here some text here some text here
+                      </span>
+                    </a></li>
                     <li><a href="#">
-                        <img src="images/Wash_station/img4.svg" alt="">
-                        <h3>some text</h3>
-                        <span class="washes-deskription">
-                          some text here some text here some text here
-                        </span>
-                      </a></li>
+                      <img src="images/Wash_station/img4.svg" alt="">
+                      <h3>some text</h3>
+                      <span class="washes-deskription">
+                        some text here some text here some text here
+                      </span>
+                    </a></li>
                   </ul>
                 </div>
               </section>
-              <section class="map-wrapper">
-                map here
+              <section class="global-map-wrapper">
+                <h2 class="standart-header">
+                  Наші локації
+                </h2>
+                <div class="map-box">
+                  <div id="map"  class="map-wrapper"></div>
+                  <div class="map-customize">
+                    <form action="" class="map-form">
+                      <div class="field">
+                        <label for="">регіон</label>
+                        <div class="input-wrap">
+                          <input placeholder="Район" type="text">
+                        </div>                      
+                      </div>
+                      <div class="field">
+                        <label for="">Рейтинг</label>
+                        <div class="input-wrap">
+                          <input placeholder="рейтинг" type="text">
+                        </div>                      
+                      </div>
+                      <div class="field">
+                        <button class="submit button">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
               </section>
               <section class="portfolio-gallery">
                 <div class="container">
-
+                  <h2 class="standart-header">
+                    Наші фото
+                  </h2>
+                  <div class="porftfolio-list">
+                    <a class="single-photo">
+                      <img src="images/automotive-bb.jpg" alt="">
+                      <span class="single-deskript">
+                        Some picture
+                      </span>
+                    </a>
+                    <a class="single-photo">
+                      <img src="images/automotive-bb.jpg" alt="">
+                      <span class="single-deskript">
+                        Some picture
+                      </span>
+                    </a>
+                    <a class="single-photo">
+                      <img src="images/automotive-bb.jpg" alt="">
+                      <span class="single-deskript">
+                        Some picture
+                      </span>
+                    </a>
+                    <a class="single-photo">
+                      <img src="images/automotive-bb.jpg" alt="">
+                      <span class="single-deskript">
+                        Some picture
+                      </span>
+                    </a>
+                    <a class="single-photo">
+                      <img src="images/automotive-bb.jpg" alt="">
+                      <span class="single-deskript">
+                        Some picture
+                      </span>
+                    </a>
+                    <a class="single-photo">
+                      <img src="images/automotive-bb.jpg" alt="">
+                      <span class="single-deskript">
+                        Some picture
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </section>
             </main>
@@ -189,13 +257,40 @@
         </div>
         <!-- main-wrapper end-->
         <!-- add your scripts here -->
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxvl2EpYDdofoGk4BzRK2a-hE8T6t9E_c&callback=initMap"></script>
+        <script src="js/scripts.js"></script>
 
-       <script src="js/scripts.js"></script>
-     
 
-      <!-- add your scripts here -->
-    </body>
-    </html>
+        <script>
+        var marker;
+
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: {lat: 49.839683, lng: 24.029717}
+          });
+
+          marker = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 49.839683, lng: 24.029717}
+          });
+          marker.addListener('click', toggleBounce);
+        }
+
+        function toggleBounce() {
+          if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+          } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+          }
+        }
+        </script>
+
+        <!-- add your scripts here -->
+      </body>
+      </html>
 
 
 
