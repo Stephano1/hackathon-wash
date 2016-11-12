@@ -1,6 +1,7 @@
 .main-logo{
   display: block;
   float: left;
+  position: absolute;
   img{
     height: 130px;
     width: 146px;
@@ -8,10 +9,26 @@
 }
 
 .desktop-nav-wrap{
+
+ 
   .desktop-menu{
     a{
-      text-decoration: none;
-      // color: $color-dark;
-    }
+      list-style-type: none;
+      text-decoration: none;    
+    overflow: hidden;
+    background-color: #d9d9d9;
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 16px;
+      }
+      a:hover {
+    background-color: #cccccc;
+      } 
+  }
+  .container{
+     background-color: #d9d9d9;
   }
 }
+
