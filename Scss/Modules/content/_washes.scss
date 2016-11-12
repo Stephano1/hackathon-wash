@@ -16,7 +16,6 @@
       align-content: stretch;
 
       li{
-        display: inline-block;
         background: white;
         overflow: hidden;
         margin: 0;
@@ -26,6 +25,8 @@
         // flex: 1;
         // flex-basis: 20%;
         border: 1px solid transparent;
+        float: left;
+        display: block;
         img{
           transition: all .2s ease-in-out;
           transform: scale(1);
