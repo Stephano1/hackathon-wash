@@ -1,4 +1,8 @@
 .hero-img{
+  position: relative;
+  min-height: 290px;
+}
+.hero-img-wrap{
   ul{
     li{
       min-height: 290px;
@@ -19,7 +23,7 @@
         background-image:  url(../images/Nissan_370Z_Skyscrapers_Night_Lights_Photography_HD_Wallpaper.jpg);
       }
       opacity: 0;
-      position: relative;
+      position: absolute;
       z-index: 150;
       width: 100%;
       &.active{
