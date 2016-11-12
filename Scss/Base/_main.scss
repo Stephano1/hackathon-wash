@@ -1,0 +1,29 @@
+/*colors-included*/
+
+$color-dark-white: #FAFAFA;
+$color-dark-gray: #6a6e74;
+$color-wrapper-gray: #F8F8F8;
+$color-blue: #03779e;
+$color-white: #ffffff;
+
+/* font include*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+/* font include*/
+
+body, html {
+  height: auto!important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.mobile-only{
+ @media (min-width: 992px){
+  display: none !important;
+}
+}
+.desktop-only{
+  @media (max-width: 991px){
+    display: none !important;
+  }
+}
