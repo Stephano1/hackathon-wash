@@ -35,7 +35,7 @@ function toggleClass(element, className){
 document.getElementById('popup-btn').addEventListener('click', function() {
   toggleClass(document.getElementById('popup-washer'), 'popup-add-wash-visible');
   var map2 = new google.maps.Map(document.getElementById('map2'), {
-    zoom: 13,
+    zoom: 17,
     scrollwheel: false,
     center: {lat: 49.839683, lng: 24.029717}
   });
@@ -60,6 +60,8 @@ function geocodeAddress(geocoder, resultsMap) {
   });
 }
 });
+
+// mailer
 
 
 
