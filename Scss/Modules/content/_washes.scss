@@ -28,8 +28,8 @@
         width: 25%;
         align-self: center;
         border: 1px solid $color-dark;
-        flex: 1;
-        flex-basis: 20%;
+        // flex: 1;
+        // flex-basis: 20%;
 
         @media (min-width: 992px){
           border-right: none;
