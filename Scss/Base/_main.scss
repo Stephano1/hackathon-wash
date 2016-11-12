@@ -24,65 +24,68 @@ ul,li{
   padding: 0;
 }
 
+*{
+      -moz-box-sizing: border-box; 
+      box-sizing: border-box;
+    }
 
-
-.mobile-only{
- @media (min-width: 992px){
-  display: none !important;
-}
-}
-.desktop-only{
-  @media (max-width: 991px){
-    display: none !important;
+    .mobile-only{
+     @media (min-width: 992px){
+      display: none !important;
+    }
   }
-}
-
-
-.container {
-  display: block;
-  max-width: 100%!important;
-  @media only screen and (min-width: 1200px){
-
-    width: 1127px;
-    margin-left: auto!important;
-    margin-right: auto!important;
-
+  .desktop-only{
+    @media (max-width: 991px){
+      display: none !important;
+    }
   }
-  @media only screen and (max-width: 991px) and (min-width: 768px){
 
-    width: 723px;
-    margin-left: auto!important;
-    margin-right: auto!important;
 
+  .container {
+    display: block;
+    max-width: 100%!important;
+    @media only screen and (min-width: 1200px){
+
+      width: 1127px;
+      margin-left: auto!important;
+      margin-right: auto!important;
+
+    }
+    @media only screen and (max-width: 991px) and (min-width: 768px){
+
+      width: 723px;
+      margin-left: auto!important;
+      margin-right: auto!important;
+
+    }
+    @media only screen and (max-width: 767px){
+
+      width: auto!important;
+      margin-left: 1em!important;
+      margin-right: 1em!important;
+
+    }
   }
-  @media only screen and (max-width: 767px){
 
-    width: auto!important;
-    margin-left: 1em!important;
-    margin-right: 1em!important;
-
-  }
-}
-
-section:after {
+  section:after {
     content: '';
     display: block;
     height: 0;
     clear: both;
     visibility: hidden;
-}
+  }
 
-main{
-  overflow: hidden;
-  clear: both;
-}
+  main{
+    overflow: hidden;
+    clear: both;
+  }
 
-.standart-header{
-  display: block;
-  text-align: center;
-  margin: 15px auto;
-  color: #313332;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 32px;
-}
+  .standart-header{
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    color: #313332;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+  }

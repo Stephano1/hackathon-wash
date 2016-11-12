@@ -238,10 +238,18 @@
                       </ul>
                     </div>
                     <div class="car-wash-calendar">
+                      <label class="current-date" for="datepicker">Сьогодні</label>
+
                       <div id="divid"></div>
-                      <label for="datepicker">Ви обрали дату</label>
-                      <br>
-                      <input type="text" id="datepicker">
+                      <div class="datepicker-wrap">
+                        <label for="datepicker">Ви обрали дату</label>
+                        <input type="text" id="datepicker">
+                      </div>
+                      <div class="datepicker-wrap">
+                        <label for="datepicker">Ви обрали час</label>
+                        <input type="time" id="datetime">
+                      </div>
+                      <button class="submit-button">Submit</button>
                     </div>
                   </div>
                 </div>
@@ -338,10 +346,9 @@
           container: document.getElementById('container'),
         });
         </script>
-
-        <!-- add your scripts here -->
-      </body>
-      </html>
+    <!-- add your scripts here -->
+  </body>
+  </html>
 
 
 

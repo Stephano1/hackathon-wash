@@ -1,5 +1,5 @@
 .current-wash-img{
-  min-height: 540px;
+  min-height: 515px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,6 +24,10 @@
 .current-wash-check{
   float: left;
   width: 28%;
+  .current-date{
+    text-align: right;
+    display: block;
+  }
   .wash-check-header{
     ul{
       background: #07AEE5;
@@ -75,7 +79,7 @@
   .is-today{
     .pika-button{
       color: #fff!important;
-      background: #07AEE5;
+      background: #44CAFF;
     }
   }
   .pika-button{
@@ -84,5 +88,45 @@
       background: #07AEE5!important;
       border-radius: 0!important;
     }
+  }
+}
+
+.datepicker-wrap{
+  position: relative;
+  margin-top: 20px;
+  label{
+    width: 100%;
+    color: #fff!important;
+    background: #FFA80B;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px 0;
+   color: #fff;
+    font-size: 20px;
+    border-top: 1px solid #fff;
+  }
+  input{
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+.car-wash-calendar{
+  input{
+    height: 40px;
+  }
+  button.submit-button{
+    margin: 15px auto;
+    display: block;
+    text-align: center;
+    border: none;
+    background: #07AEE5;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
   }
 }
