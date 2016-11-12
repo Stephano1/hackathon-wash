@@ -61,6 +61,10 @@ function geocodeAddress(geocoder, resultsMap) {
 }
 });
 
+document.getElementById('remove-popup').addEventListener('click', function() {
+  toggleClass(document.getElementById('popup-washer'), 'popup-add-wash-visible');
+  });
+
 // mailer
 
 
