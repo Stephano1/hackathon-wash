@@ -1,0 +1,53 @@
+.current-wash-img{
+  min-height: 290px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  width: 67%;
+  margin-right: 5%;
+}
+
+.current-wash-text{
+  background-color: #07AEE5;
+  float: right;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  padding: 15px;
+  font-size: 26px;
+  position: relative;
+  right: -20px;
+  top: 20px;
+}
+
+.current-wash-check{
+  float: left;
+  width: 28%;
+  .wash-check-header{
+    ul{
+      background: #07AEE5;
+      overflow: hidden;
+      padding: 10px;
+      li{
+        display: block;
+        float: left;
+        width: 20%;
+        margin: 0 auto;
+        text-align: center;
+        a{
+          i{
+            font-size: 24px;
+              color: rgba(255,255,255,.8);
+
+          }
+          &:hover,&.active{
+            i{
+              color: rgba(255,255,255,1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
