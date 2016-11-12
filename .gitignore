@@ -1,2 +1,2 @@
-/style
-/.sass-cache
+!/style
+!/.sass-cache
