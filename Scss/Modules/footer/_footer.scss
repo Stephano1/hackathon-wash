@@ -5,12 +5,21 @@ footer{
   .footer-rows{
     float: left;
     width: 33%;
+    @media (max-width: 991px){
+      width: 100%;
+    }
     h2{
       color: $color-white;
       font-size: 15px;
       text-transform: uppercase;
       font-weight: 700;
       text-align: center;
+    }
+    a,p{
+      color: $color-white;
+    }
+    a{
+      text-decoration: none;
     }
   }
 }

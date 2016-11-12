@@ -9,12 +9,15 @@
 
 
 @import "Base/_main.scss"; 
+@import "Framework/font-awesome/scss/_font-awesome.scss";
 
 
 @import "Modules/header/_header.scss"; 
 @import "Modules/footer/_footer.scss"; 
 @import "Modules/content/_main-hero.scss"; 
-@import "Modules/content/_washes.scss"; 
+@import "Modules/content/_washes.scss";
+
+
 
 
 
