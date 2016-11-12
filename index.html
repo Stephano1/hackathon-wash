@@ -315,7 +315,10 @@
               <form action="">
                 <div class="col-wash-1">
                   <div class="field"><input type="text" placeholder="Назва"></div>
-                  <div class="field"><input type="text" placeholder="Адреса"></div>
+                  <div class="field" id="floating-panel">
+                    <input id="address" type="textbox" value="Львів, УКР">
+                    <input id="submit" type="button" value="Дотати мийку на карті">
+                  </div>
                   <div class="field"><input type="text" placeholder="Контактна інформація"></div>
                 </div>
                 <div class="col-wash-2">
@@ -330,41 +333,18 @@
                   </div>
                 </div>
               </form>
+              <div id="map2"></div>
             </div>
           </div>
         </section>
         <!-- main-wrapper end-->
         <!-- add your scripts here -->
-        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxvl2EpYDdofoGk4BzRK2a-hE8T6t9E_c&callback=initMap"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxvl2EpYDdofoGk4BzRK2a-hE8T6t9E_c&callback=initMap" async defer></script>
         <script src="js/scripts.js"></script>
 
 
         <script>
-        // var marker;
 
-        // function initMap() {
-        //   var map = new google.maps.Map(document.getElementById('map'), {
-        //     zoom: 13,
-        //     scrollwheel: false,
-        //     center: {lat: 49.839683, lng: 24.029717}
-        //   });
-
-        //   marker = new google.maps.Marker({
-        //     map: map,
-        //     draggable: true,
-        //     animation: google.maps.Animation.DROP,
-        //     position: {lat: 49.839683, lng: 24.029717}
-        //   });
-        //   marker.addListener('click', toggleBounce);
-        // }
-
-        // function toggleBounce() {
-        //   if (marker.getAnimation() !== null) {
-        //     marker.setAnimation(null);
-        //   } else {
-        //     marker.setAnimation(google.maps.Animation.BOUNCE);
-        //   }
-        // }
         function initMap() {
           var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 13,
@@ -373,6 +353,30 @@
           });
 
           setMarkers(map);
+          var map2 = new google.maps.Map(document.getElementById('map2'), {
+            zoom: 13,
+            scrollwheel: false,
+            center: {lat: 49.839683, lng: 24.029717}
+          });
+          var geocoder = new google.maps.Geocoder();
+
+          document.getElementById('submit').addEventListener('click', function() {
+            geocodeAddress(geocoder, map2);
+          });
+        }
+        function geocodeAddress(geocoder, resultsMap) {
+          var address = document.getElementById('address').value;
+          geocoder.geocode({'address': address}, function(results, status) {
+            if (status === google.maps.GeocoderStatus.OK) {
+              resultsMap.setCenter(results[0].geometry.location);
+              var marker2 = new google.maps.Marker({
+                map2: resultsMap,
+                position: results[0].geometry.location
+              });
+            } else {
+              alert('Geocode was not successful for the following reason: ' + status);
+            }
+          });
         }
 
 // Data for the markers consisting of a name, a LatLng and a zIndex for the
@@ -394,13 +398,6 @@ var wash = [
 // };
 
 function setMarkers(map) {
-  // Adds markers to the map.
-
-  // Marker sizes are expressed as a Size of X,Y where the origin of the image
-  // (0,0) is located in the top left of the image.
-
-  // Origins, anchor positions and coordinates of the marker increase in the X
-  // direction to the right and in the Y direction down.
   var image = {
     url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
     // This marker is 20 pixels wide by 32 pixels high.
@@ -430,6 +427,7 @@ function setMarkers(map) {
   }
 }
 </script>
+
 
 <script src="js/pikaday.js"></script>
 <script>
