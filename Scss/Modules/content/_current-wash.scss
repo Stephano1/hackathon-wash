@@ -1,0 +1,175 @@
+.current-wash-img{
+  min-height: 515px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  width: 67%;
+  margin-right: 5%;
+}
+
+.current-wash-text{
+  background-color: #07AEE5;
+  float: right;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  padding: 15px;
+  font-size: 26px;
+  position: relative;
+  right: -20px;
+  top: 20px;
+}
+
+.current-wash-check{
+  float: left;
+  width: 28%;
+  .current-date{
+    text-align: right;
+    display: block;
+  }
+  .wash-check-header{
+    ul{
+      background: #07AEE5;
+      overflow: hidden;
+      padding: 10px;
+      li{
+        display: block;
+        float: left;
+        width: 20%;
+        margin: 0 auto;
+        text-align: center;
+        a{
+          i{
+            font-size: 24px;
+            color: rgba(255,255,255,.8);
+
+          }
+          &:hover,&.active{
+            i{
+              color: rgba(255,255,255,1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.car-wash-calendar{
+  h2{
+    background: #07AEE5;
+    overflow: hidden;
+    padding: 10px;
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    border-top: 1px solid #fff;
+  }
+}
+
+.pika-single{
+  border: none!important;
+}
+
+.pika-lendar{
+  width: 100%!important;
+  margin: 0!important;
+  .is-today{
+    .pika-button{
+      color: #fff!important;
+      background: #44CAFF;
+    }
+  }
+  .pika-button{
+    &:hover{
+      color: #fff!important;
+      background: #07AEE5!important;
+      border-radius: 0!important;
+    }
+  }
+}
+
+.datepicker-wrap{
+  position: relative;
+  margin-top: 20px;
+  label{
+    width: 100%;
+    color: #fff!important;
+    background: #FFA80B;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 20px;
+    border-top: 1px solid #fff;
+  }
+  input{
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+.car-wash-calendar{
+  input{
+    height: 40px;
+  }
+  button.submit-button{
+    margin: 15px auto;
+    display: block;
+    text-align: center;
+    border: none;
+    background: #07AEE5;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+.popup-add-wash{
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: #FFA80B;
+  &.popup-add-wash-visible{
+    display: block;
+  }
+}
+
+.add-wash-wrap{
+ padding: 15px 40px;
+ overflow: hidden;
+ display: block;
+ h2{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: block;
+  font-size: 24px;
+}
+input{
+  width: 100%;
+  display: block;
+  height: 30px;
+  margin-bottom: 10px;
+  border: none;
+}
+.col-wash-1,.col-wash-2{
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+.col-wash-2{
+  margin-right: 0;
+}
+}

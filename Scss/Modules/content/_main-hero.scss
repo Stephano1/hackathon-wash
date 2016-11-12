@@ -1,6 +1,7 @@
 .hero-img{
   position: relative;
   min-height: 290px;
+  border-bottom: 60px solid #07AEE5;
 }
 .hero-img-wrap{
   ul{
@@ -46,18 +47,22 @@
         background: rgba(0,0,0,0.5);
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-align: center;
-        align-items: center;
+        -ms-flex-align: flex-start;
+        align-items: flex-start;
         -ms-flex-pack: center;
         justify-content: center;
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         min-height: 120px;
         color: $color-white;
         font-size: 24px;
+        padding: 20px;
+        font-weight: 300;
+        flex-direction: column;
+        text-transform: uppercase;
+        line-height: 1.5em;
         small{
-          display: block;
+          font-weight: 700;
         }
       }
     }

@@ -24,7 +24,10 @@ ul,li{
   padding: 0;
 }
 
-
+*{
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
 
 .mobile-only{
  @media (min-width: 992px){
@@ -65,14 +68,38 @@ ul,li{
 }
 
 section:after {
-    content: '';
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 main{
   overflow: hidden;
   clear: both;
+}
+
+.standart-header{
+  display: block;
+  text-align: center;
+  margin: 15px auto;
+  color: #313332;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.add-new-wash{
+  a{
+    img{
+      position: fixed;
+      right: 0;
+      top: 50%;
+      z-index: 9999;
+      height: 250px;
+      width: auto;
+      margin-top: -125px;
+    }
+  }
 }

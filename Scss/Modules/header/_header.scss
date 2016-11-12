@@ -11,30 +11,43 @@
 .header {
   width: 100%;
   overflow: hidden;
-  background-color: #d9d9d9;
+  background-color: #F1F3EE;
 }
 .desktop-nav-wrap{
 
- 
+
   .desktop-menu{
     float: right;
     a{
       list-style-type: none;
       text-decoration: none;    
-    overflow: hidden;
-    background-color: #d9d9d9;
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 25px 16px;
-      }
-      a:hover {
-    background-color: #cccccc;
-      } 
+      overflow: hidden;
+      background-color: transparent;
+      float: left;
+      display: block;
+      color: #111;
+      font-weight: 700;
+      font-style: 'regular';
+      text-align: center;
+      padding: 20px 16px;
+      text-transform: uppercase;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      border-right: 1px solid ;
+    }
+    a:hover {
+      background-color: #cccccc;
+      color: #fff;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    } 
   }
   .container{
-     background-color: #d9d9d9;
-  }
+   background-color: #d9d9d9;
+ }
 }
 
