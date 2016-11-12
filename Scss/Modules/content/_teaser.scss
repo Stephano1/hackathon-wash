@@ -16,6 +16,21 @@
       max-width: 100%;
       width: 100%;
     }
+
+    .portfolio-gallery{
+      @media (max-width: 767px){
+      width: 49%;
+    }
+    @media (min-width: 1024px){
+      width: 32%;
+    }
+      img{
+        transform: scale(1.01);
+      transition: all 0.5s ease 0s;
+      max-width: 100%;
+      width: 100%;
+      }
+    }
     span{
       position: relative;
       z-index: 9;
