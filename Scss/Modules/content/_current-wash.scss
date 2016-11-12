@@ -1,5 +1,5 @@
 .current-wash-img{
-  min-height: 290px;
+  min-height: 540px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,4 +72,17 @@
 .pika-lendar{
   width: 100%!important;
   margin: 0!important;
+  .is-today{
+    .pika-button{
+      color: #fff!important;
+      background: #07AEE5;
+    }
+  }
+  .pika-button{
+    &:hover{
+      color: #fff!important;
+      background: #07AEE5!important;
+      border-radius: 0!important;
+    }
+  }
 }
