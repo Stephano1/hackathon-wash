@@ -33,5 +33,22 @@ footer{
       font: bold;
       font-size: 25px;
     }
+    .footer-social{
+      max-width: 50%;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+
+      li{
+        display: block;
+        float: left;
+        width: 25%;
+        text-align: center;
+        margin: 0 auto;
+        i{
+          font-size: 30px;
+        }
+      }
+    }
   }
 }
