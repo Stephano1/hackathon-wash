@@ -4,16 +4,24 @@ $color-dark-gray: #F1F3EE;
 $color-blue: #07AEE5;
 $color-white: #ffffff;
 $color-dark: #231F20;
+$footer-dark: #313332;
 
 /* font include*/
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900i');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /* font include*/
 
 body, html {
   height: auto!important;
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
 }
 
 
