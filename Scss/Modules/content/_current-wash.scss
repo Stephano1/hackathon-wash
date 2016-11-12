@@ -38,7 +38,7 @@
         a{
           i{
             font-size: 24px;
-              color: rgba(255,255,255,.8);
+            color: rgba(255,255,255,.8);
 
           }
           &:hover,&.active{
@@ -49,5 +49,18 @@
         }
       }
     }
+  }
+}
+
+
+.car-wash-calendar{
+  h2{
+    background: #07AEE5;
+    overflow: hidden;
+    padding: 10px;
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    border-top: 1px solid #fff;
   }
 }
