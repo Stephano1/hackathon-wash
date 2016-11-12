@@ -1,0 +1,17 @@
+.main-logo{
+  display: block;
+  float: left;
+  img{
+    height: 130px;
+    width: 146px;
+  }
+}
+
+.desktop-nav-wrap{
+  .desktop-menu{
+    a{
+      text-decoration: none;
+      // color: $color-dark;
+    }
+  }
+}
