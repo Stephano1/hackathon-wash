@@ -1,20 +1,4 @@
-function formatDate(date) {
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var ampm = hours >= 12 ? 'pm' : 'am';
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? '0'+minutes : minutes;
-  var strTime = hours + ':' + minutes + ' ' + ampm;
-  return date.getMonth()+1 + "/" + date.getDate() + "/" + date.getFullYear() + " " + strTime;
-}
 
-var d = new Date();
-var e = formatDate(d);
-
-var selector = document.getElementById('divid');
-var div = selector.appendChild(document.createElement('h2'));
-div.innerHTML = e;
 
 
 function toggleClass(element, className){
@@ -91,6 +75,25 @@ document.getElementById('close-thanks').addEventListener('click', function() {
   
 });
 
+
+
+function formatDate(date) {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ' ' + ampm;
+  return date.getMonth()+1 + "/" + date.getDate() + "/" + date.getFullYear() + " " + strTime;
+}
+
+var d = new Date();
+var e = formatDate(d);
+
+var selector = document.getElementById('divid');
+var div = selector.appendChild(document.createElement('h2'));
+div.innerHTML = e;
 // mailer
 
 

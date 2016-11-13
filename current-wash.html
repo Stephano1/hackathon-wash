@@ -20,7 +20,7 @@
         <!-- add your styles here -->
       </head>
       <body>
-        
+        <div class="add-new-wash"><a id="popup-btn" href="#"><img src="images/add-wash.png" alt=""></a></div>
         <div class="mobile-nav mobile-only">
           <a href="#" class="mobile-logo"><img src="" alt=""></a>
           <a href="#">
@@ -219,6 +219,37 @@
             </footer>
           </div>
         </div>
+        <section class="popup-add-wash" id="popup-washer">
+          <div class="container">
+            <div class="add-wash-wrap">
+              <img src="" alt="">
+              <h2>Створити нову мийку</h2>
+              <form action="">
+                <div class="col-wash-1">
+                  <div class="field"><input type="text" placeholder="Назва"></div>
+                  <div class="field" id="floating-panel">
+                    <input id="address" type="textbox" value="Львів Стрийська 33">
+                    <input id="submit" type="button" value="додати геолокацію">
+                  </div>
+                  <div class="field"><input type="text" placeholder="Контактна інформація"></div>
+                </div>
+                <div class="col-wash-2">
+                  <div class="field">
+                    <input type="time" id="datetime">
+                  </div>
+                  <div class="field">
+                    <input type="number" placeholder="Приблизна вартість">
+                  </div>
+                  <div class="field">
+                    <input type="file" name="pic" accept="image/*">
+                  </div>
+                </div>
+              </form>
+              <div id="map2"></div>
+              <button id="remove-popup" class="new-map-added">Додайте мийку на карту</button>
+            </div>
+          </div>
+        </section>
         <section class="thanks-popup" id="show-thanks">
           <div class="container">
             <h2  id="thanks">Ви обрали</h2>
