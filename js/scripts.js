@@ -42,8 +42,13 @@ document.getElementById('popup-btn').addEventListener('click', function() {
           position: results[0].geometry.location,
         });
 
-alert(marker.position.lat());
-alert(marker.position.lng());
+        console.log(marker.position.lat());
+        console.log(marker.position.lng());
+
+        wash.push(['STR4', marker.position.lat(), marker.position.lng(),6]);
+        initMap();
+
+        console.log(wash);
       } else {
         alert('Geocode was not successful for the following reason: ' + status);
       }
