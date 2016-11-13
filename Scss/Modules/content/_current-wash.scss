@@ -179,8 +179,8 @@ input{
 }
 .col-wash-1 .field-1 input, .col-wash-2 .field-2 input {
   float: left;
-  width: 49%;
-  margin-right: 2%;
+  width: 98%;
+  padding-right: 2%;
   border:1px solid #aaa;
   box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
   border-radius:2px;
@@ -194,6 +194,11 @@ input{
 .col-wash-2{
   margin-right: 0;
 }
+}
+
+.col-wash-2,.col-wash-1{
+  float: left;
+  width: 50%!important;
 }
 
 .new-map-added{
@@ -246,7 +251,7 @@ input{
     text-transform: uppercase;
     font-size: 13px;
     cursor: pointer;
-    width: 45%;
+    width: 80%;
     
 }
 
