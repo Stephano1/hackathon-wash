@@ -98,7 +98,7 @@
                   <h2 class="standart-header">
                     Наші мийки
                   </h2>
-                  <ul>
+                  <ul id="washes-list">
                     <li>
                       <a href="current-wash.html">
                         <img src="images/Wash_station/img1.svg" alt="">
@@ -279,19 +279,19 @@
               <h2>Створити нову мийку</h2>
               <form action="">
                 <div class="col-wash-1">
-                  <div class="field-1"><input type="text" placeholder="Назва"></div>
+                  <div class="field-1"><input id="wash-name" type="text" placeholder="Назва"></div>
                   <div class="field-1" id="floating-panel">
                     <input id="address" type="textbox" value="Львів Стрийська 33">
                     <input id="submit" type="button" value="додати геолокацію">
                   </div>
-                  <div class="field-1"><input type="text" placeholder="Контактна інформація"></div>
+                  <div class="field-1"><input id="wash-info" type="text" placeholder="Контактна інформація"></div>
                 </div>
                 <div class="col-wash-2">
                   <div class="field-2">
                     <input type="time" id="datetime">
                   </div>
                   <div class="field-2">
-                    <input type="number" placeholder="Приблизна вартість">
+                    <input type="number" id="money-val" placeholder="Приблизна вартість">
                   </div>
                   <div class="file_upload">
                       <button type="button">Выбрать</button>
