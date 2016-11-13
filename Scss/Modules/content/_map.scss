@@ -1,5 +1,5 @@
 .map-wrapper{
-  height: 530px;
+  height: 515px;
   width: 100%;
 }
 
@@ -17,10 +17,12 @@
     height: 100%;
     background: rgba(0,0,0,.8);
     padding: 10px;
-    min-height: 530px;
+    min-height: 515px;
     .field{
       margin: 10px 0;
       margin-bottom: 20px;
+      display: block;
+      clear: both;
       label{
         display: block;
         text-transform: uppercase;
