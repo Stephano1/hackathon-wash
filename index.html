@@ -193,15 +193,27 @@
                     </div>
                     <div class="field">
                       <label for="">Час</label>
-                      <div class="roundedOne">
-                        <input type="checkbox" value="None" id="roundedOne1" name="check" />
-                        <label for="roundedOne"></label>
-                        <input type="checkbox" value="None" id="roundedOne2" name="check" />
-                        <label for="roundedOne"></label>
-                        <input type="checkbox" value="None" id="roundedOne3" name="check" />
-                        <label for="roundedOne"></label>
-                        <input type="checkbox" value="None" id="roundedOne4" name="check" />
-                        <label for="roundedOne"></label>
+                      <div class="roundedOne div-two">
+                        <div class="field">
+                          <input type="checkbox" value="None" id="roundedOne1" name="check" />
+                          <label for="roundedOne">Зранку</label>
+                          
+                        </div>
+                        <div class="field">
+
+                          <input type="checkbox" value="None" id="roundedOne2" name="check" />
+                          <label for="roundedOne">Вдень</label>
+                        </div>
+                        <div class="field">
+
+                          <input type="checkbox" value="None" id="roundedOne3" name="check" />
+                          <label for="roundedOne">Ввечері</label>
+                        </div>
+                        <div class="field">
+                          <input type="checkbox" value="None" id="roundedOne4" name="check" />
+                          <label for="roundedOne">Вночі </label>
+                          
+                        </div>
                       </div>                   
                     </div>
                     <div class="field">
@@ -435,13 +447,13 @@
 
 
          <script>
-           var wash = [
-           ['FRNK1', 49.839683, 24.029617, 4],
-           ['GAL2', 49.839583, 24.09717, 5],
-           ['GAL1', 49.839883, 24.049737, 3],
-           ['ZAL2', 49.839673, 24.059757, 2],
-           ['STR1', 49.839643, 24.079777, 1]
-           ];
+         var wash = [
+         ['FRNK1', 49.839683, 24.029617, 4],
+         ['GAL2', 49.839583, 24.09717, 5],
+         ['GAL1', 49.839883, 24.049737, 3],
+         ['ZAL2', 49.839673, 24.059757, 2],
+         ['STR1', 49.839643, 24.079777, 1]
+         ];
 
        //  wash = [
 
@@ -516,16 +528,16 @@ function setMarkers(map) {
 
 <script src="js/pikaday.js"></script>
 <script>
-  var picker = new Pikaday(
-  {
-    field: document.getElementById('datepicker'),
-    firstDay: 1,
-    minDate: new Date(),
-    maxDate: new Date(2020, 12, 31),
-    yearRange: [2000,2020],
-    bound: false,
-    container: document.getElementById('container'),
-  });
+var picker = new Pikaday(
+{
+  field: document.getElementById('datepicker'),
+  firstDay: 1,
+  minDate: new Date(),
+  maxDate: new Date(2020, 12, 31),
+  yearRange: [2000,2020],
+  bound: false,
+  container: document.getElementById('container'),
+});
 </script>
 <!-- add your scripts here -->
 </body>

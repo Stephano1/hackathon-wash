@@ -135,72 +135,72 @@ main{
     display: block;   
   }
 
-   #thanks{
-     font-family: 'Roboto';
-     font-size: 30px;
-     font-weight: 700;
-     color: #fff;
+  #thanks{
+   font-family: 'Roboto';
+   font-size: 30px;
+   font-weight: 700;
+   color: #fff;
 
-   }
+ }
 
-   #number-ph{
-     font-family: 'Roboto';
-     font-size: 30px;
-     font-weight: 700;
-     color: #fff;
-   }
+ #number-ph{
+   font-family: 'Roboto';
+   font-size: 30px;
+   font-weight: 700;
+   color: #fff;
+ }
 
-  .field{
-    label,input,a{
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-      width: 100%;
-      margin-top: 15px;
-      color: #fff;
-    }
-    label{
-      max-width: 80%;
-      display: block;
-      text-align: center;
-      font-size: 20px;
-    }
-    input{
-      max-width: 40%;
-      display: block;
-      margin: 15px auto;
-      padding: 15px;
-      min-height: 40px;
-      color: #000;
-    }
-    #number-ph{
-      font-weight: 400;
-    }      
-    }
-    .close-btn{
-      margin: 15px auto;
-      display: block;
-      text-align: center;
-      border: none;
-      background: #EA5323;
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 16px;
-      text-decoration: none;
-      cursor: pointer;
-      max-width: 600px;
-      padding: 15px 15px;
-      text-decoration:none;
-      text-align:center;
-      font-size: 19px;
-      border-radius:2px;
-      -moz-transition: all 0.17s;
-      -webkit-transition: all 0.17s;
-      transition: all 0.17s;
-      
-      
-    }
+ .field{
+  label,input,a{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    color: #fff;
   }
+  label{
+    max-width: 80%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+  input{
+    max-width: 40%;
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    min-height: 40px;
+    color: #000;
+  }
+  #number-ph{
+    font-weight: 400;
+  }      
+}
+.close-btn{
+  margin: 15px auto;
+  display: block;
+  text-align: center;
+  border: none;
+  background: #EA5323;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  max-width: 600px;
+  padding: 15px 15px;
+  text-decoration:none;
+  text-align:center;
+  font-size: 19px;
+  border-radius:2px;
+  -moz-transition: all 0.17s;
+  -webkit-transition: all 0.17s;
+  transition: all 0.17s;
+
+
+}
+}
 
 /*sprite with stars*/
 #reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
@@ -208,7 +208,7 @@ main{
 }
 
 #reviewStars-input {
-  
+
   /*fix floating problems*/
   overflow: hidden;
   *zoom: 1;
@@ -271,4 +271,28 @@ main{
 }
 #reviewStars-input #star-5 {
   left: 265px;
+}
+
+
+.div-two{
+  .field{
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 0 !important;
+    input{
+      text-align: left;
+      width: 10% !important;
+      float: left;
+      line-height: 15px;
+      margin-top: 0px!important;
+      padding: 0 !important;
+    }
+    label{
+      float: left;
+      text-align: left;
+      width: 84% !important;
+      margin-bottom: 0 !important;
+    }
+  }
 }
