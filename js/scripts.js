@@ -62,6 +62,28 @@ document.getElementById('popup-btn').addEventListener('click', function() {
 
 document.getElementById('remove-popup').addEventListener('click', function() {
   toggleClass(document.getElementById('popup-washer'), 'popup-add-wash-visible');
+
+  var wName =  document.getElementById('wash-name').value;
+  var wAddress =  document.getElementById('address').value;
+  var wInfo =  document.getElementById('wash-info').value;
+  var wVal =  document.getElementById('money-val').value;
+
+
+  // var washes = document.getElementById('washes-list');
+  // var textName = washes.appendChild(document.createElement('h3'));
+  // var textAdress = washes.appendChild(document.createElement('span'));
+  // var textInfo = washes.appendChild(document.createElement('span'));
+  // var textVal = washes.appendChild(document.createElement('span'));
+
+
+  // textName.innerHTML = wName;
+  // textAdress.innerHTML = wAddress;
+  // textInfo.innerHTML = wInfo;
+  // textVal.innerHTML = wVal;
+
+  console.log(wName,wAddress,wInfo,wVal);
+
+
 });
 
 
