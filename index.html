@@ -256,7 +256,7 @@
                         <label for="datepicker">Ви обрали час</label>
                         <input type="time" id="datetime">
                       </div>
-                      <button class="submit-button">Submit</button>
+                      <button class="submit-button thank-message" id="thanks-popup">Submit</button>
                     </div>
                   </div>
                 </div>
@@ -343,20 +343,33 @@
             </div>
           </div>
         </section>
-        <!-- main-wrapper end-->
-        <!-- add your scripts here -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxvl2EpYDdofoGk4BzRK2a-hE8T6t9E_c"></script>
-        <script src="js/scripts.js"></script>
+        <section class="thanks-popup" id="show-thanks">
+          <div class="container">
+            <h2  id="thanks">Ви обрали</h2>
+            <div class="field">
+              <form action="">
+             <label for="">Введіть свій контактний телефон, ми з Вами зв'яжемось якщо обрана дата вільна</label>
+             <label for="phonenum">Формат номеру (xxx-xxx-xxxx):</label>
+             <input  id="phonenum" type="tel" placeholder="Ваш телефон" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required>
+             <button class="close-btn" id="close-thanks">дякуємо що Ви з нами</button>
+             </form>
+           </div>
+         </div>
+       </section>
+       <!-- main-wrapper end-->
+       <!-- add your scripts here -->
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxvl2EpYDdofoGk4BzRK2a-hE8T6t9E_c"></script>
+       <script src="js/scripts.js"></script>
 
 
-        <script>
-        var wash = [
-        ['FRNK1', 49.839683, 24.029617, 4],
-        ['GAL2', 49.839583, 24.09717, 5],
-        ['GAL1', 49.839883, 24.049737, 3],
-        ['ZAL2', 49.839673, 24.059757, 2],
-        ['STR1', 49.839643, 24.079777, 1]
-        ];
+       <script>
+       var wash = [
+       ['FRNK1', 49.839683, 24.029617, 4],
+       ['GAL2', 49.839583, 24.09717, 5],
+       ['GAL1', 49.839883, 24.049737, 3],
+       ['ZAL2', 49.839673, 24.059757, 2],
+       ['STR1', 49.839643, 24.079777, 1]
+       ];
 
        //  wash = [
 
@@ -372,7 +385,7 @@
        // ]
 
 
-       
+
        initMap();
        function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
