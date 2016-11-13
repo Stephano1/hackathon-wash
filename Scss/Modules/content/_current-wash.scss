@@ -151,14 +151,17 @@
  padding: 15px 150px;
  overflow: hidden;
  display: block; 
+ background-color: #FFA80B;
+ border: solid 2px white;
  h2{
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   color: #fff;
+  font-family: 'Roboto';
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   display: block;
-  font-size: 30px;
+  font-size: 36px;
 }
 input{
   width: 100%;
@@ -199,17 +202,19 @@ input{
   display: block;
   text-align: left;
   border: none;
-  background: #D33535;
+  background: #EA5323;
   color: #fff;
   text-transform: uppercase;
   font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
   cursor: pointer;
   width: 50%;
   padding: 10px 0;
   text-decoration:none;
   text-align:center;
   font-size: 19px;
-  border-radius:6px;
+  border-radius:2px;
   -moz-transition: all 0.17s;
   -webkit-transition: all 0.17s;
   transition: all 0.17s;
@@ -227,31 +232,44 @@ input{
   -moz-transition: all 0.17s;
   -webkit-transition: all 0.17s;
   transition: all 0.17s;
-  border:1px solid #D9CCCC; 
+  border:1px solid #902727; 
   
 }
 
 .file_upload{
-    position: relative;
-    overflow: hidden;
-    font-size: 1em;        
-    height: 2em;           
-    line-height: 2em;      
-    border-radius:6px;
-    -moz-transition: all 0.17s;
-    -webkit-transition: all 0.17s;
-    transition: all 0.17s;
-    
+    margin: 15px auto;
+    display: block;
+    text-align: center;
+    border: none;
+    background: #07AEE5;
+    color: #111;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: pointer;
+    width: 45%;
     
 }
+
+.car-wash-16{
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+
 .file_upload > button{
-    background: #D33535;
+    background: #EA5323;
     float: right;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
     width: 8em;            
-    height: 100%
+    height: 100%;
+    color: #fff;
+    font-style: '';
 }
 .file_upload > div{
-  background: #D33535;
+  background: #fff;
     padding-left: 1em      
 }
 @media only screen and ( max-width: 500px ){  
@@ -268,6 +286,7 @@ input{
     top: 0;
     width: 100%;
     height: 100%;
+    color: #111;
     transform: scale(20);
     letter-spacing: 10em;     
     -ms-transform: scale(20); 

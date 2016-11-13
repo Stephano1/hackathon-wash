@@ -8,7 +8,7 @@ $footer-dark: #313332;
 
 /* font include*/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /* font include*/
@@ -126,11 +126,30 @@ main{
     flex-direction: column;
     height: 100vh;
     bottom: 1px solid #fff;
+    background-color: #FFA80B;
+    border: solid 2px;
+    border-color: white;
   }
   h2{
     text-align: center;
-    display: block;
+    display: block;   
   }
+
+   #thanks{
+     font-family: 'Roboto';
+     font-size: 30px;
+     font-weight: 700;
+     color: #fff;
+
+   }
+
+   #number-ph{
+     font-family: 'Roboto';
+     font-size: 30px;
+     font-weight: 700;
+     color: #fff;
+   }
+
   .field{
     label,input,a{
       display: block;
@@ -163,7 +182,7 @@ main{
       display: block;
       text-align: center;
       border: none;
-      background: #D33535;
+      background: #EA5323;
       color: #fff;
       text-transform: uppercase;
       font-size: 16px;
@@ -174,13 +193,11 @@ main{
       text-decoration:none;
       text-align:center;
       font-size: 19px;
-      border-radius:6px;
+      border-radius:2px;
       -moz-transition: all 0.17s;
       -webkit-transition: all 0.17s;
       transition: all 0.17s;
-      border:1px solid #902727; 
-      -moz-box-shadow: 0px 3px 0px #7C1C1C;
-      -webkit-box-shadow: 0px 6px 0px #7C1C1C;
-      box-shadow: 0px 3px 0px #7C1C1C;
+      
+      
     }
   }

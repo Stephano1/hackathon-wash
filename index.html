@@ -102,33 +102,43 @@
                     <li>
                       <a href="current-wash.html">
                         <img src="images/Wash_station/img1.svg" alt="">
-                        <h3>Мийка на Стрийській</h3>
+                        <h3>LITS</h3>
                         <span class="washes-deskription">
-                          Автомийка на стрийській вулиці 
-                          Автомийка на стрийській вулиці 
-                          
+                         Вул. Стрийська 100 <br>
+                            т. 0980500128<br>
+                         Час роботи: 6:00-23:00<br>
+                         <strong>Вартість: від 100 грн.</strong> 
                         </span>
                       </a>
                     </li>
                     <li><a href="#">
                       <img src="images/Wash_station/img2.svg" alt="">
-                      <h3>some text</h3>
+                      <h3>CAR WASH</h3>
                       <span class="washes-deskription">
-                        some text here some text here some text here
+                        Вул. Кузневича 2 <br>
+                            т. 0965111165<br>
+                         Час роботи: 8:00-21:00<br>
+                         <strong>Вартість: від 80 грн.</strong> 
                       </span>
                     </a></li>
                     <li><a href="#">
                       <img src="images/Wash_station/img3.svg" alt="">
-                      <h3>some text</h3>
+                      <h3>777 Wash</h3>
                       <span class="washes-deskription">
-                        some text here some text here some text here
+                        Вул. Кульпарківська 111 <br>
+                            т. 0963470256<br>
+                         Час роботи: 00:00-24:00<br>
+                         <strong>Вартість: від 140 грн.</strong> 
                       </span>
                     </a></li>
                     <li><a href="#">
                       <img src="images/Wash_station/img4.svg" alt="">
-                      <h3>some text</h3>
+                      <h3>TRUMP WASH</h3>
                       <span class="washes-deskription">
-                        some text here some text here some text here
+                        Вул. Дж. Вашингтона 3 <br>
+                            т. 0322244605<br>
+                         Час роботи: 10:00-17:00<br>
+                         <strong>Вартість: від 60 грн.</strong> 
                       </span>
                     </a></li>
                   </ul>
@@ -273,6 +283,9 @@
           </div>
         </div>
         <section class="popup-add-wash" id="popup-washer">
+          <div class="car-wash-16">
+            <img src="images/car-wash-16.png">
+          </div>
           <div class="container">
             <div class="add-wash-wrap">
               <img src="" alt="">
@@ -294,29 +307,29 @@
                     <input type="number" placeholder="Приблизна вартість">
                   </div>
                   <div class="file_upload">
-                      <button type="button">Выбрать</button>
-                      <div>Файл не выбраний</div>
+                      <button type="button">Вибрати</button>
+                      <div>Файл не вибраний</div>
                       <input type="file">
                   </div>
+              <div id="map2"></div>
+
                 </div>
               </form>
-              <div id="map2"></div>
               <div class="button-config">
                 <button id="remove-popup" class="new-map-added">Додайте мийку на карту</button>
               </div>
-              
-            </div>
+               </div>
           </div>
         </section>
         <section class="thanks-popup" id="show-thanks">
           <div class="container">
-            <h2  id="thanks">Ви обрали</h2>
+            <h2 id="thanks">ВИ ОБРАЛИ:</h2>
             <div class="field">
               <form action="">
-             <label for="number-ph">Введіть свій контактний телефон, ми з Вами зв'яжемось якщо обрана дата вільна</label>
+             <label for="">Введіть свій контактний телефон, ми з Вами зв'яжемось якщо обрана дата вільна</label>
              <label for="phonenum">Формат номеру (xxx-xxx-xxxx):</label>
              <input  id="phonenum" type="tel" placeholder="Ваш телефон" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required>
-             <button class="close-btn" id="close-thanks">дякуємо що Ви з нами</button>
+             <button class="close-btn" id="close-thanks">Дякуємо</button>
              </form>
            </div>
          </div>
@@ -328,7 +341,6 @@
 
 
        <script>
-
        var wash = [
        ['FRNK1', 49.839683, 24.029617, 4],
        ['GAL2', 49.839583, 24.09717, 5],
@@ -336,6 +348,20 @@
        ['ZAL2', 49.839673, 24.059757, 2],
        ['STR1', 49.839643, 24.079777, 1]
        ];
+
+       //  wash = [
+
+       //  {
+       //   name:
+       //   title:
+       //   x:
+       //   y:
+       //   rating:
+       //   price:
+       //   time:
+       // },
+       // ]
+
 
 
        initMap();

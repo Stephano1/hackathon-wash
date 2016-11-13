@@ -110,11 +110,11 @@
                       <div id="divid"></div>
                       <div class="datepicker-wrap">
                         <label for="datepicker">Ви обрали дату</label>
-                        <input type="text" id="datepicker">
+                        <input type="text" id="datepicker" value="12.11.2016">
                       </div>
                       <div class="datepicker-wrap">
                         <label for="datepicker">Ви обрали час</label>
-                        <input type="time" id="datetime">
+                        <input type="time" id="datetime" value="">
                       </div>
                       <button class="submit-button thank-message" id="thanks-popup">Submit</button>
                     </div>
@@ -252,13 +252,13 @@
         </section>
         <section class="thanks-popup" id="show-thanks">
           <div class="container">
-            <h2  id="thanks">Ви обрали</h2>
+            <h2  id="thanks">Ви обрали:</h2>
             <div class="field">
               <form action="">
-               <label for="">Введіть свій контактний телефон, ми з Вами зв'яжемось якщо обрана дата вільна</label>
-               <label for="phonenum">Формат номеру (xxx-xxx-xxxx):</label>
+               <label for="">Введіть свій контактний телефон!<br> Ми з Вами зв'яжемось якщо обрана дата вільна</label>
+               <label for="phonenum">Формат номеру: <br> (xxx-xxx-xxxx)</label>
                <input  id="phonenum" type="tel" placeholder="Ваш телефон" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required>
-               <button class="close-btn" id="close-thanks">дякуємо що Ви з нами</button>
+               <button class="close-btn" id="close-thanks">Дякуємо!</button>
              </form>
            </div>
          </div>
