@@ -39,6 +39,9 @@ document.getElementById('popup-btn').addEventListener('click', function() {
     scrollwheel: false,
     center: {lat: 49.839683, lng: 24.029717}
   });
+
+
+
   var geocoder = new google.maps.Geocoder();
     geocodeAddress(geocoder, map2);
 
@@ -52,18 +55,27 @@ function geocodeAddress(geocoder, resultsMap) {
       resultsMap.setCenter(results[0].geometry.location);
       var marker = new google.maps.Marker({
         map: resultsMap,
-        position: results[0].geometry.location
+        position: results[0].geometry.location,
       });
     } else {
       alert('Geocode was not successful for the following reason: ' + status);
     }
   });
 }
+// google.maps.event.addListener(map2, 'click', function(event){alert('Lat: ' + event.latLng.lat() + ' Lng: ' + event.latLng.lng())});
 });
 
 document.getElementById('remove-popup').addEventListener('click', function() {
   toggleClass(document.getElementById('popup-washer'), 'popup-add-wash-visible');
+
+
+
+
   });
+
+
+
+
 
 // mailer
 

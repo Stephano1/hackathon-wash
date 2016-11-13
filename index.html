@@ -352,17 +352,33 @@
         ['ZAL2', 49.839673, 24.059757, 2],
         ['STR1', 49.839643, 24.079777, 1]
         ];
-        initMap();
-        function initMap() {
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 13,
-            scrollwheel: false,
-            center: {lat: 49.839683, lng: 24.029717}
-          });
 
-          setMarkers(map);
+       //  wash = [
 
-        }
+       //  {
+       //   name:
+       //   title:
+       //   x:
+       //   y:
+       //   rating:
+       //   price:
+       //   time:
+       // },
+       // ]
+
+
+       
+       initMap();
+       function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          scrollwheel: false,
+          center: {lat: 49.839683, lng: 24.029717}
+        });
+
+        setMarkers(map);
+
+      }
 
 
 // Data for the markers consisting of a name, a LatLng and a zIndex for the
