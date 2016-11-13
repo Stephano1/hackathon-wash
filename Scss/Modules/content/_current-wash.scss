@@ -298,3 +298,40 @@ input{
     opacity: 0;
     cursor: pointer
 }
+
+.roundedOne1 label {
+  overflow: hidden;
+  display: block;
+}
+
+
+.roundedOne1 input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  
+    float: left;
+    text-align: left;
+}
+.roundedOne2 label {
+  overflow: hidden;
+  display: block;
+}
+
+
+.roundedOne2 input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  
+    float: left;
+    text-align: left;
+}
