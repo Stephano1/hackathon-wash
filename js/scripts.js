@@ -41,11 +41,17 @@ document.getElementById('popup-btn').addEventListener('click', function() {
           map: resultsMap,
           position: results[0].geometry.location,
         });
+
+alert(marker.position.lat());
+alert(marker.position.lng());
       } else {
         alert('Geocode was not successful for the following reason: ' + status);
       }
     });
   }
+
+
+
 // google.maps.event.addListener(map2, 'click', function(event){alert('Lat: ' + event.latLng.lat() + ' Lng: ' + event.latLng.lng())});
 });
 
