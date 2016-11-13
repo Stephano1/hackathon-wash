@@ -139,16 +139,16 @@
   z-index: 9999;
   top: 0;
   bottom: 0;
+  background: rgba(255,168,11,.85);
   height: 100%;
   width: 100%;
-  background: #FFA80B;
   &.popup-add-wash-visible{
     display: block;
   }
 }
 
 .add-wash-wrap{
- padding: 15px 100px;
+ padding: 15px 150px;
  overflow: hidden;
  display: block; 
  h2{
@@ -158,7 +158,7 @@
   text-transform: uppercase;
   font-weight: 700;
   display: block;
-  font-size: 50px;
+  font-size: 30px;
 }
 input{
   width: 100%;
@@ -214,9 +214,7 @@ input{
   -webkit-transition: all 0.17s;
   transition: all 0.17s;
   border:1px solid #902727; 
-  -moz-box-shadow: 0px 6px 0px #7C1C1C;
-  -webkit-box-shadow: 0px 6px 0px #7C1C1C;
-  box-shadow: 0px 6px 0px #7C1C1C;
+  
 }
 
 .file_upload{
@@ -229,10 +227,8 @@ input{
   -moz-transition: all 0.17s;
   -webkit-transition: all 0.17s;
   transition: all 0.17s;
-  border:1px solid #902727; 
-  -moz-box-shadow: 0px 6px 0px #7C1C1C;
-  -webkit-box-shadow: 0px 6px 0px #7C1C1C;
-  box-shadow: 0px 6px 0px #7C1C1C; 
+  border:1px solid #D9CCCC; 
+  
 }
 
 .file_upload{
@@ -242,13 +238,11 @@ input{
     height: 2em;           
     line-height: 2em;      
     border-radius:6px;
-  -moz-transition: all 0.17s;
-  -webkit-transition: all 0.17s;
-  transition: all 0.17s;
-  border:1px solid #902727; 
-  -moz-box-shadow: 0px 6px 0px #7C1C1C;
-  -webkit-box-shadow: 0px 6px 0px #7C1C1C;
-  box-shadow: 0px 6px 0px #7C1C1C; 
+    -moz-transition: all 0.17s;
+    -webkit-transition: all 0.17s;
+    transition: all 0.17s;
+    
+    
 }
 .file_upload > button{
     background: #D33535;
