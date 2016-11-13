@@ -57,15 +57,6 @@
                   <a href="index.html" class="main-logo"><img src="images/logo_car_wash_01-01.svg" alt=""></a>
                   <div class="desktop-menu desktop-only">
                     <a href="#">
-                      Про нас
-                    </a>
-                    <a href="#">
-                      Наші мийки
-                    </a>
-                    <a href="#">
-                      Контакти
-                    </a> 
-                    <a href="#">
                       Портфоліо
                     </a>
                     <a href="#">
@@ -93,94 +84,44 @@
                   </ul>
                 </div>
               </section>
-              <section class="car-washes">
+              <section class="current-wash">
                 <div class="container">
-                  <h2 class="standart-header">
-                    Наші мийки
-                  </h2>
-                  <ul>
-                    <li>
-                      <a href="current-wash.html">
-                        <img src="images/Wash_station/img1.svg" alt="">
-                        <h3>Мийка на Стрийській</h3>
-                        <span class="washes-deskription">
-                          Автомийка на стрийській вулиці 
-                          Автомийка на стрийській вулиці 
-                          
-                        </span>
-                      </a>
-                    </li>
-                    <li><a href="#">
-                      <img src="images/Wash_station/img2.svg" alt="">
-                      <h3>some text</h3>
-                      <span class="washes-deskription">
-                        some text here some text here some text here
-                      </span>
-                    </a></li>
-                    <li><a href="#">
-                      <img src="images/Wash_station/img3.svg" alt="">
-                      <h3>some text</h3>
-                      <span class="washes-deskription">
-                        some text here some text here some text here
-                      </span>
-                    </a></li>
-                    <li><a href="#">
-                      <img src="images/Wash_station/img4.svg" alt="">
-                      <h3>some text</h3>
-                      <span class="washes-deskription">
-                        some text here some text here some text here
-                      </span>
-                    </a></li>
-                  </ul>
-                </div>
-              </section>
-              <section class="global-map-wrapper">
-                <h2 class="standart-header">
-                  Наші локації
-                </h2>
-                <div class="map-box">
-                  <div id="map"  class="map-wrapper"></div>
-                  <div class="map-customize">
-                    <form action="" class="map-form">
-                      <div class="field">
-                        <label for="">регіон</label>
-                        <div class="input-wrap">
-                          <!-- <input placeholder="Район" type="text"> -->
-                          <select name="" id="">
-                            <option value="all" data-value="0">Всі райони</option>
-                            <option value="fran" data-value="1">Франківський</option>
-                            <option value="zalizn" data-value="2">Залізничний</option>
-                            <option value="galyck" data-value="3">Галицький</option>
-                            <option value="shevcenk" data-value="4">Шевченківський</option>
-                          </select>
-                        </div>                      
+                  <div class="current-wash-img" style="background-image: url(images/unnamed.jpg);">
+                    <div class="current-wash-text">
+                      <h3>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                        Мийка на Стрийській
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="current-wash-check">
+                    <div class="wash-check-header">
+                      <ul>
+                        <li><a class="active" href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="car-wash-calendar">
+                      <label class="current-date" for="datepicker">Сьогодні</label>
+
+                      <div id="divid"></div>
+                      <div class="datepicker-wrap">
+                        <label for="datepicker">Ви обрали дату</label>
+                        <input type="text" id="datepicker">
                       </div>
-                      <div class="field">
-                        <label for="">Рейтинг</label>
-                        <div class="input-wrap">
-                          <input placeholder="Район" type="text">
-                        </div>                      
+                      <div class="datepicker-wrap">
+                        <label for="datepicker">Ви обрали час</label>
+                        <input type="time" id="datetime">
                       </div>
-                      <div class="field">
-                        <label for="">Вартість</label>
-                        <div class="input-wrap">
-                          <input placeholder="Район" type="text">
-                        </div>                      
-                      </div>
-                      <div class="field">
-                        <label for="">Час</label>
-                        <div class="input-wrap">
-                          <input placeholder="рейтинг" type="text">
-                        </div>                      
-                      </div>
-                      <div class="field">
-                        <button class="submit button">Submit</button>
-                      </div>
-                    </form>
+                      <button class="submit-button thank-message" id="thanks-popup">Submit</button>
+                    </div>
                   </div>
                 </div>
-
               </section>
+
               <section class="portfolio-gallery">
                 <div class="container">
                   <h2 class="standart-header">
@@ -225,6 +166,12 @@
                     </a>
                   </div>
                 </div>
+              </section>
+              <section class="global-map-wrapper">
+                <h2 class="standart-header">
+                  Ми на карті
+                </h2>
+                <div id="map"  class="map-wrapper"></div>
               </section>
             </main>
             <!-- main-content-end -->
@@ -308,10 +255,10 @@
             <h2  id="thanks">Ви обрали</h2>
             <div class="field">
               <form action="">
-             <label for="">Введіть свій контактний телефон, ми з Вами зв'яжемось якщо обрана дата вільна</label>
-             <label for="phonenum">Формат номеру (xxx-xxx-xxxx):</label>
-             <input  id="phonenum" type="tel" placeholder="Ваш телефон" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required>
-             <button class="close-btn" id="close-thanks">дякуємо що Ви з нами</button>
+               <label for="">Введіть свій контактний телефон, ми з Вами зв'яжемось якщо обрана дата вільна</label>
+               <label for="phonenum">Формат номеру (xxx-xxx-xxxx):</label>
+               <input  id="phonenum" type="tel" placeholder="Ваш телефон" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required>
+               <button class="close-btn" id="close-thanks">дякуємо що Ви з нами</button>
              </form>
            </div>
          </div>
