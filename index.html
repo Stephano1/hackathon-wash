@@ -153,7 +153,8 @@
                   <div class="map-customize">
                     <form action="" class="map-form">
                       <div class="field">
-                        <label for="">регіон</label>
+                        <label for="">ФІЛЬТРИ ЗА КРИТЕРІЯМИ:</label>
+                        <label for="">РЕГІОН</label>
                         <div class="input-wrap">
                           <!-- <input placeholder="Район" type="text"> -->
                           <select name="" id="">
@@ -167,9 +168,22 @@
                       </div>
                       <div class="field">
                         <label for="">Рейтинг</label>
-                        <div class="input-wrap">
-                          <input placeholder="Район" type="text">
-                        </div>                      
+                        <div id="reviewStars-input">
+    <input id="star-4" type="radio" name="reviewStars"/>
+    <label title="gorgeous" for="star-4"></label>
+
+    <input id="star-3" type="radio" name="reviewStars"/>
+    <label title="good" for="star-3"></label>
+
+    <input id="star-2" type="radio" name="reviewStars"/>
+    <label title="regular" for="star-2"></label>
+
+    <input id="star-1" type="radio" name="reviewStars"/>
+    <label title="poor" for="star-1"></label>
+
+    <input id="star-0" type="radio" name="reviewStars"/>
+    <label title="bad" for="star-0"></label>
+</div>                    
                       </div>
                       <div class="field">
                         <label for="">Вартість</label>
@@ -179,9 +193,16 @@
                       </div>
                       <div class="field">
                         <label for="">Час</label>
-                        <div class="input-wrap">
-                          <input placeholder="рейтинг" type="text">
-                        </div>                      
+                        <div class="roundedOne">
+                            <input type="checkbox" value="None" id="roundedOne1" name="check" />
+                            <label for="roundedOne"></label>
+                            <input type="checkbox" value="None" id="roundedOne2" name="check" />
+                            <label for="roundedOne"></label>
+                            <input type="checkbox" value="None" id="roundedOne3" name="check" />
+                            <label for="roundedOne"></label>
+                            <input type="checkbox" value="None" id="roundedOne4" name="check" />
+                            <label for="roundedOne"></label>
+                        </div>                   
                       </div>
                       <div class="field">
                         <button class="submit button">Submit</button>
